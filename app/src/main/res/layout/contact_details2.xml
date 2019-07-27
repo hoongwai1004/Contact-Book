@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/viewId2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/view"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/viewContactName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="14dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/viewPhone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/viewId2"
+        android:layout_below="@+id/viewContactName2"
+        android:layout_marginTop="14dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/viewEmail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/viewId2"
+        android:layout_below="@+id/viewPhone2"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/viewAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/viewId2"
+        android:layout_below="@+id/viewEmail2"
+        android:layout_marginTop="11dp"
+        android:textSize="25dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/floatingActionButtonMessage"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/floatingActionButtonPhoneCall"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/sym_action_email" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonPhoneCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="7dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/floatingActionButtonPhoneCall"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/floatingActionButtonEmail"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_message_white_48dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonFB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/floatingActionButtonMessage"
+        android:layout_alignEnd="@+id/floatingActionButtonEmail"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_web_white_48dp" />
+</RelativeLayout>

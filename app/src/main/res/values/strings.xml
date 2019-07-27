@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="title1">Add New Contact</string>
+    <string name="title2">Refresh</string>
+    <string name="name">Contact Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="address">Homepage Address</string>
+    <string name="button">Add Contact</string>
+</resources>

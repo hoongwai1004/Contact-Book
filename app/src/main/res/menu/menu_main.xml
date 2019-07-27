@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.contacts.MainActivity">
+
+    <item
+        android:id="@+id/itemAdd"
+        android:icon="@mipmap/ic_account_circle_white_48dp"
+        android:orderInCategory="100"
+        android:title="@string/title1"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/itemDelete"
+        android:orderInCategory="101"
+        android:title="Delete Contact"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/itemEdit"
+        android:orderInCategory="101"
+        android:title="Edit Contact"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/itemAbout"
+        android:orderInCategory="101"
+        android:title="About"
+        app:showAsAction="never"/>
+</menu>
